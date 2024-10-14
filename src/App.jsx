@@ -43,9 +43,9 @@ const App = () => {
   return (
     <div className="section">
       <section>
-        <weatherForecasts />
-        {weatherForecasts.map((item) => (
+        {weatherForecasts.map((item, idx) => (
           <WeatherForecast
+            key={idx}
             img={item.img}
             imgAlt={item.imgAlt}
             conditions={item.conditions}
