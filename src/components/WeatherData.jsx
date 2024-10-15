@@ -2,7 +2,7 @@ import React from "react";
 
 const WeatherData = (props) => {
   return (
-    <div>
+    <>
       <h2>{props.day}</h2>
       <p>
         <span>conditions: </span>
@@ -12,7 +12,7 @@ const WeatherData = (props) => {
         <span>time: </span>
         {props.time}
       </p>
-    </div>
+    </>
   );
 };
 
